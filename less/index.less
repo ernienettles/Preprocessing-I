@@ -49,11 +49,282 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+// General Styling
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+body, html {
+	line-height: 2;
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	color: @color;
+	background-color: #5CDB95;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Baloo Chettan 2', cursive;
+    letter-spacing: 1px;
+}
+
+
+// Variables
+
+@color: #05386B;
+
+// Mixins
+
+// Header Styling
+
+.title {
+	width: 100%;
+	background-color: #5CDB95;
+	margin: 0;
+
+		h1 {
+			text-align: center;
+			font-size: 15rem;
+	}
+
+			h2 {
+				text-align: center;
+				font-size: 10rem;
+		}
+}
+
+// Nav Styling
+
+@keyframes fadetoblack {
+	0% {background-color:#379683; left:0px; top:0px;}
+	50% {background-color:black; left:10px; top:0px;}
+	100% {background-color:#379683; left:0px; top:0px;}
+  }
+
+.navigation {
+	display:flex;
+	justify-content: space-around;
+	width: 100%;
+	font-size: 2rem;
+	margin-bottom: 1%;
+	background-color: #5CDB95;
+		a {
+			text-align: center;
+			text-decoration: none;
+			color: @color;
+			width: 12%;
+			padding: 1% 1%;
+			background-color: #379683;
+			border-radius: 50px;
+				&:hover {
+					animation-name: fadetoblack;
+  					animation-duration: .5s;
+					position: relative;
+					color: #EDF5E1;
+				}
+			
+		}
+}
+
+// Wrapper Styling
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+// Big Container 1 Styling
+
+.big-container1 {
+	width:40%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	background-color: #EDF5E1;
+		#skills {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin: 10% 0;
+			h3 {
+				font-size: 6rem;
+				width: 75%;
+			}
+
+			ul {
+				width: 75%;
+				color: @color;
+				font-size: 1.5rem;
+				list-style-type: square;
+				list-style-position: inside;
+			}
+		} 
+
+		#contact {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 50%;
+			h3 {
+				font-size: 6rem;
+				width: 75%;
+			}
+
+			span {
+				width: 75%;
+				color: @color;
+				font-size: 1.5rem;
+			}
+		}
+
+		#references {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 10%;
+				h3 {
+				font-size: 6rem;
+				width: 75%;
+				}
+
+				span {
+				width: 75%;
+				color: @color;
+				font-size: 1.5rem;
+				}
+		}
+}
+
+// Big Container 2 Styling
+
+.big-container2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	background-color: @color;
+	color: #EDF5E1;
+
+	#intro {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: 10% 0;
+			h3 {
+			font-size: 6rem;
+			width: 75%;
+			}
+
+			p {
+			width: 75%;
+			font-size: 1.5rem;
+			}
+	}
+	
+		#work-experience {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 10%;
+				h3 {
+				font-size: 6rem;
+				width: 75%;
+				}
+				.experience1 {
+					width: 75%;
+					margin-bottom: 5%;
+					h4 {
+						font-size: 4rem;
+					}
+					h5 {
+						font-size: 2rem
+					}
+					ul {
+						font-size: 1.5rem;
+						width: 75%;
+						list-style-type: square;
+						list-style-position: inside;
+					}
+					}
+				.experience2 {
+					width: 75%;
+					margin-bottom: 5%;
+					h4 {
+						font-size: 4rem;
+					}
+					h5 {
+						font-size: 2rem
+					}
+					ul {
+						font-size: 1.5rem;
+						width: 75%;
+						list-style-type: square;
+						list-style-position: inside;
+					}
+				}
+				
+				
+		}
+
+		#education {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 10%;
+				h3 {
+				font-size: 6rem;
+				width: 75%;
+				}
+	
+				.education1 {
+					width: 75%;
+					margin-bottom: 5%;
+					h4 {
+						font-size: 4rem;
+					}
+					h5 {
+						font-size: 2rem
+					}
+					ul {
+						font-size: 1.5rem;
+						width: 75%;
+						list-style-type: square;
+						list-style-position: inside;
+					}
+					}
+				.education2 {
+					width: 75%;
+					margin-bottom: 5%;
+					h4 {
+						font-size: 4rem;
+					}
+					h5 {
+						font-size: 2rem
+					}
+					ul {
+						font-size: 1.5rem;
+						width: 75%;
+						list-style-type: square;
+						list-style-position: inside;
+					}
+				}
+		}
+	
+}
