@@ -73,24 +73,31 @@ h1, h2, h3, h4, h5 {
 
 
 // Variables
-
+@bgcolor: #5CDB95;
 @color: #05386B;
 
 // Mixins
+.flex() {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.width() {
+	width: 100%;
+}
 
 // Header Styling
 
 .title {
-	display:flex;
-	justify-content: center;
-	align-items: center;
+	.flex();
 	flex-flow: row wrap;
-	width: 100%;
-	background-color: #5CDB95;
+	.width();
+	background-color: @bgcolor;
 	margin: 0;
 
 		h1 {
-			width: 100%;
+			.width();
 			text-align: center;
 			font-size: 15rem;
 			@media (max-width: 700px) {
