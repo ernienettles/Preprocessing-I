@@ -149,17 +149,33 @@ h5 {
   letter-spacing: 1px;
 }
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   width: 100%;
   background-color: #5CDB95;
   margin: 0;
 }
 .title h1 {
+  width: 100%;
   text-align: center;
   font-size: 15rem;
 }
+@media (max-width: 700px) {
+  .title h1 {
+    font-size: 5rem;
+  }
+}
 .title h2 {
+  width: 100%;
   text-align: center;
   font-size: 10rem;
+}
+@media (max-width: 700px) {
+  .title h2 {
+    font-size: 3rem;
+  }
 }
 @keyframes fadetoblack {
   0% {
@@ -187,8 +203,11 @@ h5 {
   background-color: #5CDB95;
 }
 .navigation a {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  text-align: center;
   color: #05386B;
   width: 12%;
   padding: 1% 1%;
@@ -200,6 +219,30 @@ h5 {
   animation-duration: 0.5s;
   position: relative;
   color: #EDF5E1;
+}
+@media (max-width: 1100px) {
+  .navigation a {
+    font-size: 1.4rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .navigation a {
+    font-size: 1.4rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .navigation a {
+    font-size: 1rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
 }
 .wrapper {
   display: flex;
@@ -225,6 +268,11 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container1 #skills h3 {
+    font-size: 4rem;
+  }
+}
 .big-container1 #skills ul {
   width: 75%;
   color: #05386B;
@@ -244,6 +292,11 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container1 #contact h3 {
+    font-size: 4rem;
+  }
+}
 .big-container1 #contact span {
   width: 75%;
   color: #05386B;
@@ -261,10 +314,25 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container1 #references h3 {
+    font-size: 4rem;
+  }
+}
 .big-container1 #references span {
   width: 75%;
   color: #05386B;
   font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .big-container1 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .big-container1 {
+    width: 100%;
+  }
 }
 .big-container2 {
   display: flex;
@@ -287,6 +355,11 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container2 #intro h3 {
+    font-size: 4rem;
+  }
+}
 .big-container2 #intro p {
   width: 75%;
   font-size: 1.5rem;
@@ -303,12 +376,22 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container2 #work-experience h3 {
+    font-size: 4rem;
+  }
+}
 .big-container2 #work-experience .experience1 {
   width: 75%;
   margin-bottom: 5%;
 }
 .big-container2 #work-experience .experience1 h4 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #work-experience .experience1 h4 {
+    font-size: 3rem;
+  }
 }
 .big-container2 #work-experience .experience1 h5 {
   font-size: 2rem;
@@ -325,6 +408,11 @@ h5 {
 }
 .big-container2 #work-experience .experience2 h4 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #work-experience .experience2 h4 {
+    font-size: 3rem;
+  }
 }
 .big-container2 #work-experience .experience2 h5 {
   font-size: 2rem;
@@ -347,12 +435,22 @@ h5 {
   font-size: 6rem;
   width: 75%;
 }
+@media (max-width: 500px) {
+  .big-container2 #education h3 {
+    font-size: 4rem;
+  }
+}
 .big-container2 #education .education1 {
   width: 75%;
   margin-bottom: 5%;
 }
 .big-container2 #education .education1 h4 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #education .education1 h4 {
+    font-size: 3rem;
+  }
 }
 .big-container2 #education .education1 h5 {
   font-size: 2rem;
@@ -370,6 +468,11 @@ h5 {
 .big-container2 #education .education2 h4 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .big-container2 #education .education2 h4 {
+    font-size: 3rem;
+  }
+}
 .big-container2 #education .education2 h5 {
   font-size: 2rem;
 }
@@ -378,4 +481,14 @@ h5 {
   width: 75%;
   list-style-type: square;
   list-style-position: inside;
+}
+@media (max-width: 800px) {
+  .big-container2 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .big-container2 {
+    width: 100%;
+  }
 }
