@@ -1,1 +1,494 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  line-height: 2;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  color: #05386B;
+  background-color: #5CDB95;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Baloo Chettan 2', cursive;
+  letter-spacing: 1px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #5CDB95;
+  margin: 0;
+}
+.title h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 15rem;
+}
+@media (max-width: 700px) {
+  .title h1 {
+    font-size: 5rem;
+  }
+}
+.title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 10rem;
+}
+@media (max-width: 700px) {
+  .title h2 {
+    font-size: 3rem;
+  }
+}
+@keyframes fadetoblack {
+  0% {
+    background-color: #379683;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: black;
+    left: 10px;
+    top: 0px;
+  }
+  100% {
+    background-color: #379683;
+    left: 0px;
+    top: 0px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 1%;
+  background-color: #5CDB95;
+}
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  color: #05386B;
+  width: 12%;
+  padding: 1% 1%;
+  background-color: #379683;
+  border-radius: 50px;
+}
+.navigation a:hover {
+  animation-name: fadetoblack;
+  animation-duration: 0.5s;
+  position: relative;
+  color: #EDF5E1;
+}
+@media (max-width: 1100px) {
+  .navigation a {
+    font-size: 1.4rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .navigation a {
+    font-size: 1.4rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .navigation a {
+    font-size: 1rem;
+    padding: 1% 8%;
+    width: 14%;
+    text-align: center;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.big-container1 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #EDF5E1;
+}
+.big-container1 #skills {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10% 0;
+}
+.big-container1 #skills h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container1 #skills h3 {
+    font-size: 4rem;
+  }
+}
+.big-container1 #skills ul {
+  width: 75%;
+  color: #05386B;
+  font-size: 1.5rem;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.big-container1 #contact {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50%;
+}
+.big-container1 #contact h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container1 #contact h3 {
+    font-size: 4rem;
+  }
+}
+.big-container1 #contact span {
+  width: 75%;
+  color: #05386B;
+  font-size: 1.5rem;
+}
+.big-container1 #references {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.big-container1 #references h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container1 #references h3 {
+    font-size: 4rem;
+  }
+}
+.big-container1 #references span {
+  width: 75%;
+  color: #05386B;
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .big-container1 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .big-container1 {
+    width: 100%;
+  }
+}
+.big-container2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background-color: #05386B;
+  color: #EDF5E1;
+}
+.big-container2 #intro {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10% 0;
+}
+.big-container2 #intro h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container2 #intro h3 {
+    font-size: 4rem;
+  }
+}
+.big-container2 #intro p {
+  width: 75%;
+  font-size: 1.5rem;
+}
+.big-container2 #work-experience {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.big-container2 #work-experience h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container2 #work-experience h3 {
+    font-size: 4rem;
+  }
+}
+.big-container2 #work-experience .experience1 {
+  width: 75%;
+  margin-bottom: 5%;
+}
+.big-container2 #work-experience .experience1 h4 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #work-experience .experience1 h4 {
+    font-size: 3rem;
+  }
+}
+.big-container2 #work-experience .experience1 h5 {
+  font-size: 2rem;
+}
+.big-container2 #work-experience .experience1 ul {
+  font-size: 1.5rem;
+  width: 75%;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.big-container2 #work-experience .experience2 {
+  width: 75%;
+  margin-bottom: 5%;
+}
+.big-container2 #work-experience .experience2 h4 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #work-experience .experience2 h4 {
+    font-size: 3rem;
+  }
+}
+.big-container2 #work-experience .experience2 h5 {
+  font-size: 2rem;
+}
+.big-container2 #work-experience .experience2 ul {
+  font-size: 1.5rem;
+  width: 75%;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.big-container2 #education {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.big-container2 #education h3 {
+  font-size: 6rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .big-container2 #education h3 {
+    font-size: 4rem;
+  }
+}
+.big-container2 #education .education1 {
+  width: 75%;
+  margin-bottom: 5%;
+}
+.big-container2 #education .education1 h4 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #education .education1 h4 {
+    font-size: 3rem;
+  }
+}
+.big-container2 #education .education1 h5 {
+  font-size: 2rem;
+}
+.big-container2 #education .education1 ul {
+  font-size: 1.5rem;
+  width: 75%;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.big-container2 #education .education2 {
+  width: 75%;
+  margin-bottom: 5%;
+}
+.big-container2 #education .education2 h4 {
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  .big-container2 #education .education2 h4 {
+    font-size: 3rem;
+  }
+}
+.big-container2 #education .education2 h5 {
+  font-size: 2rem;
+}
+.big-container2 #education .education2 ul {
+  font-size: 1.5rem;
+  width: 75%;
+  list-style-type: square;
+  list-style-position: inside;
+}
+@media (max-width: 800px) {
+  .big-container2 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .big-container2 {
+    width: 100%;
+  }
+}
